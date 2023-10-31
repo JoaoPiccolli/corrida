@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Speed Racer</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+    <!-- Firebase --> <!-- The core Firebase JS SDK is always required and must be listed first --> 
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+
+    <!-- Firebase SDK CODE ADD BELOW -->
+    <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCVTbDlAm2xVNHGNfVkWKoB1Z1cl-669K8",
+      authDomain: "corrida-469ed.firebaseapp.com",
+      databaseURL: "https://corrida-469ed-default-rtdb.firebaseio.com",
+      projectId: "corrida-469ed",
+      storageBucket: "corrida-469ed.appspot.com",
+      messagingSenderId: "681508835894",
+      appId: "1:681508835894:web:847a6b931e7b4fd8e8fe97"
+    };
+    
+    // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+  </script>
+  </head>
+  <body>
+    
+    <script src="./sketch.js"></script>
+  </body>
+</html>
